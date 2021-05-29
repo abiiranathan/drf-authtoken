@@ -6,7 +6,11 @@ Painless token authentication for django restframework. Built on top of rest_fra
 
 
 ## Installation
-```bash pip install drf-restauth```
+```bash 
+
+pip install drf-restauth
+
+```
 
 ## Homepage
 The project homepage on: [Github](https://github.com/abiiranathan/drf-authtoken)
