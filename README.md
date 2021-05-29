@@ -9,7 +9,7 @@ Painless token authentication for django restframework. Built on top of rest_fra
 ```bash pip install drf-restauth```
 
 ## Homepage
-The project homepage on: [Github](https://github.com/abiiranathan/drf-authtoken.git)
+The project homepage on: [Github](https://github.com/abiiranathan/drf-authtoken)
 
 
 ### Usage
@@ -209,10 +209,7 @@ The following variables are passed to you in the context for customization:
  - site_name
 
 
-NB: If you are using an SPA or mobile application where template rendring is not possible, set *CONFIRM_REDIRECT_URL* in settings instead of the *PASSWORD_CHANGE_TEMPLATE* .The view will redirect the user to this route.
-
-
-10. ```/POST /api/auth/reset_password_confirmation/<uidb64>/<token>/"
+1.  ```/POST /api/auth/reset_password_confirmation/<uidb64>/<token>/```
 
 **Note that the token expires after 30 minutes after the email is sent**
 
@@ -220,12 +217,12 @@ NB: If you are using an SPA or mobile application where template rendring is not
 
 body:
 {
-    "password": "string", // Must be at least 8 characters(as required!)
+    "password": "string"
 }
 
 ```
 
-## Required Headers
+### Required Headers
 - Authorization: Token xxxxxxxx (required for protected routes)
 - Content-Type: application/json
 - X-Requested-With: XMLHttpRequest (Desirable)
@@ -295,6 +292,6 @@ const getLoggedInUser = ():Promise<User>=>{
 }
 ```
 
-Submit an issue at [Github](https://github.com/abiiranathan/drf-authtoken.git/issues "Click to submit an issue")
+Submit an issue at [Github](https://github.com/abiiranathan/drf-authtoken/issues "Click to submit an issue")
 
 Feel free to add your voice but be gentle, this is my first open source Django package!
